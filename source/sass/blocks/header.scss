@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 120px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  position: fixed;
 
   @media (max-width: ($vp-768 - 1)) {
     min-height: 70px;
@@ -26,8 +27,10 @@
   gap: 15px;
   margin-right: auto;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
@@ -101,6 +104,7 @@
 
   &:hover {
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
@@ -115,6 +119,11 @@
   @media (max-width: ($vp-1024 - 1)) {
     display: none;
   }
+
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
 }
 
 .header__button {
@@ -123,6 +132,8 @@
   }
 
   margin-right: 61px;
+  background-color: transparent;
+  border: 1px solid $color-alice-blue;
 }
 
 .header__logo-name-wrapper {
@@ -149,4 +160,3 @@
     width: 90%;
   }
 }
-

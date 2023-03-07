@@ -737,7 +737,11 @@ button,
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #00b2ff;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
 }
 
 .modal__close-btn {
@@ -780,6 +784,29 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal-h1 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.modal__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.modal__button {
+  background-color: #041427;
+  border-color: transparent;
 }
 
 .custom-input,
@@ -1303,6 +1330,7 @@ button,
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  position: fixed;
 }
 
 .header__wrapper {
@@ -1326,8 +1354,10 @@ button,
   margin-right: auto;
 }
 
-.header__logo:hover {
+.header__logo:hover,
+.header__logo:focus {
   opacity: 0.6;
+  outline: none;
 }
 
 .header__logo:active {
@@ -1380,6 +1410,7 @@ button,
 
 .header__contacts-item:hover {
   opacity: 0.6;
+  outline: none;
 }
 
 .header__contacts-item:active {
@@ -1393,8 +1424,15 @@ button,
   align-items: center;
 }
 
+.header__contacts-text:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
 .header__button {
   margin-right: 61px;
+  background-color: transparent;
+  border: 1px solid #f2f5f7;
 }
 
 .header__container {
@@ -1410,15 +1448,14 @@ button,
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: transparent;
   line-height: 16px;
   letter-spacing: 0.05em;
   padding: 10px 15px;
-  border: 1px solid #f2f5f7;
   border-radius: 3px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   opacity: 0.6;
   cursor: pointer;
 }
