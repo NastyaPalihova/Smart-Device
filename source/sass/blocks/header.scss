@@ -1,0 +1,152 @@
+.header {
+  width: 100%;
+  min-height: 120px;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @media (max-width: ($vp-768 - 1)) {
+    min-height: 70px;
+  }
+
+}
+
+.header__wrapper {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  @media (max-width: ($vp-1024 - 1)) {
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  display: flex;
+  gap: 15px;
+  margin-right: auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: ($vp-1024 - 1)) {
+    padding-bottom: 14px;
+    margin-left: 51px;
+  }
+
+  @media (max-width: (($vp-768 - 1))) {
+    margin-left: 26px;
+  }
+}
+
+.header__logo-text {
+  font-weight: 700;
+  color: $color-alice-blue;
+  margin: 0;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.header__logo-image {
+  padding-top: 3px;
+
+  @media (max-width: (($vp-768 - 1))) {
+    width: 35px;
+    height: 35px;
+    padding-top: 0;
+  }
+}
+
+.header__logo-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.header__contacts-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 117px;
+  margin: 0 auto 0 0;
+
+  @media (max-width: ($vp-1024 - 1)) {
+    padding-right: 30px;
+    padding-bottom: 21px;
+    gap: 39px;
+    margin: 0;
+    margin-right: 49px;
+  }
+
+  @media (max-width: ($vp-768 - 1)) {
+    margin-right: 14px;
+  }
+}
+
+.header__contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: $color-alice-blue;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__contacts-text {
+  color: inherit;
+  align-items: center;
+
+  @media (max-width: ($vp-1024 - 1)) {
+    display: none;
+  }
+}
+
+.header__button {
+  @media (max-width: ($vp-1024 - 1)) {
+    display: none;
+  }
+
+  margin-right: 61px;
+}
+
+.header__logo-name-wrapper {
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
+
+.header__container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1220px;
+  padding-top: 27px;
+
+  @media (max-width: ($vp-768 - 1)) {
+    padding-top: 15px;
+  }
+
+  @media (max-width: ($vp-1024 - 1)) {
+    padding-top: 16px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 90%;
+  }
+}
+
