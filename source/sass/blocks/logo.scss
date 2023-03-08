@@ -1,0 +1,51 @@
+.logo {
+  display: flex;
+  gap: 15px;
+  margin-right: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: ($vp-1024 - 1)) {
+    padding-bottom: 14px;
+    margin-left: 51px;
+  }
+
+  @media (max-width: (($vp-768 - 1))) {
+    margin-left: 26px;
+  }
+}
+
+.logo__text {
+  font-weight: 700;
+  color: $color-alice-blue;
+  margin: 0;
+  font-size: 25px;
+  padding-top: 10px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.logo__image {
+  padding-top: 3px;
+
+  @media (max-width: (($vp-768 - 1))) {
+    width: 35px;
+    height: 35px;
+    padding-top: 0;
+  }
+}
+
+.logo__description {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}

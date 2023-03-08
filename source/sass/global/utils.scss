@@ -69,3 +69,14 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+/* стили для стики-футера */
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}

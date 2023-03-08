@@ -1,0 +1,23 @@
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 220px 220px;
+  max-height: 130px;
+  row-gap: 6px;
+  max-width: 470px;
+  column-gap: 30px;
+}
+
+.nav__section-name {
+  color: $color-default-white;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}

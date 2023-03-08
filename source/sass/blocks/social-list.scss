@@ -1,0 +1,22 @@
+.social-list {
+  margin: 30px 0 0 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.social-list__item {
+  padding: 3px 5px 0 5px;
+}
+
+.social-list__item-link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
