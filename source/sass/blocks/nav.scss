@@ -3,11 +3,17 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 220px 220px;
+  grid-template-columns: 1fr 1fr;
   max-height: 130px;
   row-gap: 6px;
   max-width: 470px;
   column-gap: 30px;
+
+  @media (max-width: $vp-1024) {
+    display: block;
+    max-height: none;
+    max-width: 220px;
+  }
 }
 
 .nav__section-name {
@@ -21,3 +27,10 @@
   margin-bottom: 20px;
   letter-spacing: 0.05em;
 }
+
+.nav__list-item {
+  @media (max-width: $vp-1024) {
+    margin-bottom: 10px;
+  }
+}
+

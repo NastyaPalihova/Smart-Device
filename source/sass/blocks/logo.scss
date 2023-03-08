@@ -13,13 +13,14 @@
     opacity: 0.3;
   }
 
-  @media (max-width: ($vp-1024 - 1)) {
-    padding-bottom: 14px;
-    margin-left: 51px;
-  }
-
   @media (max-width: (($vp-768 - 1))) {
     margin-left: 26px;
+  }
+}
+
+.header__logo {
+  @media (max-width: ($vp-1024)) {
+    padding-bottom: 14px;
   }
 }
 
@@ -30,10 +31,12 @@
   font-size: 25px;
   padding-top: 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  white-space: nowrap;
 }
 
 .logo__image {
   padding-top: 3px;
+  max-width: none;
 
   @media (max-width: (($vp-768 - 1))) {
     width: 35px;

@@ -1450,7 +1450,7 @@ button,
 
 .footer {
   background-color: #041427;
-  height: 280px;
+  min-height: 280px;
   width: 100%;
 }
 
@@ -1474,15 +1474,7 @@ button,
   padding: 0;
   max-width: 345px;
   max-height: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .footer__contacts-name {
@@ -1532,6 +1524,16 @@ button,
   margin-top: 10px;
 }
 
+.footer__link:not(:first-child) {
+  white-space: nowrap;
+}
+
+.footer__nav-contacts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1557,10 +1559,12 @@ button,
   font-size: 25px;
   padding-top: 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  white-space: nowrap;
 }
 
 .logo__image {
   padding-top: 3px;
+  max-width: none;
 }
 
 .logo__description {
@@ -1600,8 +1604,8 @@ button,
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 220px 220px;
-  grid-template-columns: 220px 220px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   max-height: 130px;
   row-gap: 6px;
   max-width: 470px;
@@ -1679,6 +1683,53 @@ button,
   }
 }
 
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 50px;
+  }
+
+  .footer {
+    padding: 0 50px;
+  }
+
+  .footer__logo {
+    padding-bottom: 35px;
+  }
+
+  .footer__container {
+    padding-top: 16px;
+    display: block;
+  }
+
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .header__logo {
+    padding-bottom: 14px;
+  }
+
+  .social-list {
+    margin: 0;
+  }
+
+  .nav__list {
+    display: block;
+    max-height: none;
+    max-width: 220px;
+  }
+
+  .nav__list-item {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -1708,15 +1759,6 @@ button,
 
   .header__container {
     padding-top: 16px;
-  }
-
-  .footer__container {
-    padding-top: 16px;
-  }
-
-  .logo {
-    padding-bottom: 14px;
-    margin-left: 51px;
   }
 }
 
