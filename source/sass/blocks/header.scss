@@ -3,9 +3,11 @@
   min-height: 120px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   position: fixed;
+  z-index: 2;
 
   @media (max-width: ($vp-768 - 1)) {
     min-height: 70px;
+    padding: 0 25px;
   }
 
   @media (max-width: $vp-1024) {
@@ -22,6 +24,24 @@
 
   @media (max-width: ($vp-1024 - 1)) {
     justify-content: space-between;
+  }
+}
+
+.header__logo {
+  @media (max-width: ($vp-1024)) {
+    padding-bottom: 14px;
+  }
+
+  @media (max-width: (($vp-768 - 1))) {
+    margin-left: 26px;
+  }
+}
+
+.header__logo-image {
+  @media (max-width: (($vp-768 - 1))) {
+    width: 35px;
+    height: 35px;
+    padding-top: 0;
   }
 }
 

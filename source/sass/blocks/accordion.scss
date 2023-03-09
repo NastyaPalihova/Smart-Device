@@ -1,0 +1,77 @@
+.accordion {
+  position: relative;
+}
+
+.accordion--opened .accordion__toggle::before {
+  @media (max-width: ($vp-768 - 1)) {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 15px;
+    background-color: $color-alice-blue;
+    top: 26px;
+    right: 20px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.accordion--closed .accordion__toggle::before,
+.accordion--closed .accordion__toggle::after {
+  @media (max-width: ($vp-768 - 1)) {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 15px;
+    background-color: $color-alice-blue;
+    top: 26px;
+    right: 20px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.accordion--closed .accordion__toggle::after {
+  @media (max-width: ($vp-768 - 1)) {
+    transform: rotate(90deg);
+  }
+}
+
+.accordion__toggle {
+  display: none;
+
+  @media (max-width: ($vp-768 - 1)) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 55px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+
+.accordion--closed .nav__list {
+  @media (max-width: ($vp-768 - 1)) {
+    display: none;
+  }
+}
+
+.accordion--closed .footer__contacts-list {
+  @media (max-width: ($vp-768 - 1)) {
+    display: none;
+  }
+}
+
+.accordion--no-js .accordion__toggle {
+  display: none;
+}
