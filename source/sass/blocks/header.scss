@@ -3,15 +3,16 @@
   min-height: 120px;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   position: fixed;
-  z-index: 2;
+  z-index: 3;
+
+  @include vp-1023 {
+    padding: 0 50px;
+    min-height: 100px;
+  }
 
   @include vp-767 {
     min-height: 70px;
     padding: 0 25px;
-  }
-
-  @include vp-1023 {
-    padding: 0 50px;
   }
 }
 
@@ -32,8 +33,8 @@
     padding-bottom: 14px;
   }
 
-  @include vp-767  {
-    margin-left: 26px;
+  @include vp-767 {
+    margin-left: 1px;
   }
 }
 
@@ -53,14 +54,14 @@
   margin: 0 auto 0 0;
 
   @include vp-1023 {
-    padding-right: 30px;
+    padding-right: 0;
     padding-bottom: 21px;
     gap: 39px;
-    margin: 0;
-    margin-right: 49px;
+    margin: 0 29px 0 0;
   }
 
   @include vp-767 {
+    padding-right: 6px;
     margin-right: 14px;
   }
 }

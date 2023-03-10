@@ -1353,7 +1353,7 @@ button,
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__wrapper {
@@ -1644,21 +1644,27 @@ button,
   display: none;
 }
 
+.first-screen {
+  position: relative;
+}
+
 .first-screen::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 880px;
+  height: 100%;
   left: 0;
   top: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
-  z-index: 0;
+  z-index: 1;
 }
 
-.first-screen {
+.first-screen__image {
   position: relative;
+  width: 100%;
+  z-index: 0;
 }
 
 .first-screen__wrapper {
@@ -1666,6 +1672,10 @@ button,
   font-style: normal;
   text-transform: uppercase;
   color: #f2f5f7;
+  position: absolute;
+  z-index: 2;
+  top: 34.5%;
+  left: 24.7%;
 }
 
 .first-screen__h1 {
@@ -1673,7 +1683,7 @@ button,
   line-height: 94px;
   letter-spacing: 0.07em;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .first-screen__description {
@@ -1682,7 +1692,7 @@ button,
   font-size: 22px;
   line-height: 34px;
   max-width: 685px;
-  margin-bottom: 40px;
+  margin: 0 0 62px 0;
 }
 
 .first-screen__button {
@@ -1691,7 +1701,7 @@ button,
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.05em;
-  padding: 15px 25px;
+  padding: 15px 27px;
 }
 
 .advantages {
@@ -1710,10 +1720,6 @@ button,
   min-height: 500px;
   width: 100%;
   background-color: #00b2ff;
-}
-
-.main-container {
-  margin-top: 120px;
 }
 
 /* @mixin hover-focus {
@@ -1780,6 +1786,7 @@ button,
 
   .header {
     padding: 0 50px;
+    min-height: 100px;
   }
 
   .header__wrapper {
@@ -1793,11 +1800,10 @@ button,
   }
 
   .header__contacts-list {
-    padding-right: 30px;
+    padding-right: 0;
     padding-bottom: 21px;
     gap: 39px;
-    margin: 0;
-    margin-right: 49px;
+    margin: 0 29px 0 0;
   }
 
   .header__contacts-text {
@@ -1848,6 +1854,27 @@ button,
   .nav__list-item {
     margin-bottom: 10px;
   }
+
+  .first-screen__wrapper {
+    top: 28%;
+    left: 6.5%;
+    height: 100%;
+  }
+
+  .first-screen__h1 {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 1px;
+  }
+
+  .first-screen__description {
+    margin-bottom: 72px;
+  }
+
+  .first-screen__button {
+    margin-left: 45px;
+    padding: 17px 27px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1880,7 +1907,7 @@ button,
   }
 
   .header__logo {
-    margin-left: 26px;
+    margin-left: 1px;
   }
 
   .header__logo-image {
@@ -1890,6 +1917,7 @@ button,
   }
 
   .header__contacts-list {
+    padding-right: 6px;
     margin-right: 14px;
   }
 
@@ -2024,6 +2052,49 @@ button,
 
   .accordion--closed .footer__contacts-list {
     display: none;
+  }
+
+  .first-screen__wrapper {
+    margin-right: 25px;
+    max-width: 270px;
+    top: 26.7%;
+    left: 7.5%;
+  }
+
+  .first-screen__h1 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 9px;
+  }
+
+  .first-screen__description {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 52px;
+  }
+
+  .first-screen__button {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 38px 11px 38px;
+  }
+
+  /* Скрыть оригинальный текст кнопки */
+
+  .first-screen__button span {
+    display: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  /* Показать новый текст на псевдоэлементе ::before */
+
+  .first-screen__button::before {
+    content: "Бесплатная консультация";
+    display: inline-block;
+    text-indent: 0;
   }
 }
 
