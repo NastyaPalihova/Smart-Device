@@ -59,35 +59,79 @@
     <main class="main-container">
       <section class="first-screen">
         <div class="first-screen__wrapper">
-        <h1 class="first-screen__h1">Печатные платы</h1>
-        <p class="first-screen__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="first-screen__button button" href="#form"><span>Получить бесплатную консультацию</span></a>
-      </div>
+          <h1 class="first-screen__h1">Печатные платы</h1>
+          <p class="first-screen__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="first-screen__button button" href="#form"><span>Получить бесплатную консультацию</span></a>
+        </div>
 
-      <picture>
-        <source media="(max-width: 767px)" srcset="img/background-mobile.jpg 1x, img/background-mobile@2x.jpg 2x" width="1220" height="560">
-        <source media="(max-width: 1023px)" srcset="img/background-tablet.jpg 1x, img/background-tablet@2x.jpg 2x" width="1396" height="640">
-        <img class="first-screen__image" src="img/background.jpg"
-          srcset="img/background.jpg 1x, img/background@2x.jpg 2x" width="1920" height="800" alt="">
-
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/background-mobile.jpg 1x, img/background-mobile@2x.jpg 2x"
+            width="1220" height="560">
+          <source media="(max-width: 1023px)" srcset="img/background-tablet.jpg 1x, img/background-tablet@2x.jpg 2x"
+            width="1396" height="640">
+          <img class="first-screen__image" src="img/background.jpg"
+            srcset="img/background.jpg 1x, img/background@2x.jpg 2x" width="1920" height="800" alt="">
         </picture>
-        </section>
+      </section>
 
-        <section class="advantages">
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__item-wrapper">
+              <svg class="advantages__image" width="35" height="35">
+                <use href="img/sprite.svg#clock"></use>
+              </svg>
+              <h3>Оперативные сроки</h3>
+              <span>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</span>
+              </div>
+              </li>
 
-        </section>
+            <li class="advantages__item">
+              <div class="advantages__item-wrapper">
+              <svg class="advantages__image" width="35" height="35">
+                <use href="img/sprite.svg#hired"></use>
+              </svg>
+              <h3>Крупные поставщики</h3>
+              <span>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</span>
+            </div>
+              </li>
 
-        <section class="company">
+            <li class="advantages__item">
+              <div class="advantages__item-wrapper">
+              <svg class="advantages__image" width="35" height="35">
+                <use href="img/sprite.svg#detective"></use>
+              </svg>
+              <h3>Полная конфиденциальность</h3>
+              <span>По желанию клиента&ensp;  мы обеспечиваем полную конфиденциальность.</span>
+            </div>
+            </li>
 
-        </section>
+            <li class="advantages__item">
+              <div class="advantages__item-wrapper">
+              <svg class="advantages__image" width="35" height="35">
+                <use href="img/sprite.svg#money"></use>
+              </svg>
+              <h3>Персонализация стоимости</h3>
+              <span>Мы&ensp;  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</span>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="catalog">
+      <section class="company">
 
-        </section>
+      </section>
 
-        <section class="form" id="form">
+      <section class="catalog">
 
-        </section>
+      </section>
+
+      <section class="form" id="form">
+
+      </section>
 
 
     </main>
@@ -96,7 +140,7 @@
       <div class="footer__container">
         <div class="footer__wrapper">
           <a class="footer__logo logo" href="index.html">
-              <img class="logo__image" src="img/svg/logo.svg" alt="Логотип Smart Device." width="55" height="55">
+            <img class="logo__image" src="img/svg/logo.svg" alt="Логотип Smart Device." width="55" height="55">
             <div class="logo__name-wrapper">
               <p class="logo__text">Smart Device</p>
               <p class="logo__description">умные технологии</p>

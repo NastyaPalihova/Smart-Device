@@ -760,7 +760,7 @@ button,
   width: 600px;
   padding: 40px;
   background-color: #00b2ff;
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -1388,7 +1388,7 @@ button,
   align-items: center;
   gap: 12px;
   color: #f2f5f7;
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 18px;
 }
@@ -1687,10 +1687,10 @@ button,
 }
 
 .first-screen__description {
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Courier New", monospace;
   text-transform: none;
   font-size: 22px;
-  line-height: 34px;
+  line-height: 24px;
   max-width: 685px;
   margin: 0 0 62px 0;
 }
@@ -1705,9 +1705,85 @@ button,
 }
 
 .advantages {
-  min-height: 500px;
   width: 100%;
   background-color: #f2f5f7;
+}
+
+.advantages__item svg {
+  color: #00b2ff;
+}
+
+.advantages__item:hover svg,
+.advantages__item:focus svg {
+  color: #f2f5f7;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 300px 300px;
+  grid-template-rows: 300px 300px;
+  gap: 30px;
+}
+
+.advantages__wrapper {
+  padding: 120px 18.1% 100px;
+}
+
+.advantages__item {
+  min-width: 400px;
+  outline: 1px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.advantages__item:hover,
+.advantages__item:focus {
+  background-color: #00b2ff;
+}
+
+.advantages__item-wrapper {
+  padding: 40px 45px;
+}
+
+.advantages__item-wrapper::before {
+  position: absolute;
+  content: "";
+  background-color: #00b2ff;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.advantages__item h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00b2ff;
+  margin-top: 14px;
+  margin-bottom: 12px;
+}
+
+.advantages__item:hover h3,
+.advantages__item:focus h3 {
+  color: #f2f5f7;
+}
+
+.advantages__item span {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "PT Mono", "Courier New", monospace;
+}
+
+.advantages__item:hover span {
+  color: #f2f5f7;
 }
 
 .catalog {
@@ -1858,7 +1934,6 @@ button,
   .first-screen__wrapper {
     top: 28%;
     left: 6.5%;
-    height: 100%;
   }
 
   .first-screen__h1 {
@@ -1874,6 +1949,22 @@ button,
   .first-screen__button {
     margin-left: 45px;
     padding: 17px 27px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 320px 320px;
+    grid-template-columns: 320px 320px;
+    -ms-grid-rows: 360px 360px;
+    grid-template-rows: 360px 360px;
+  }
+
+  .advantages__wrapper {
+    padding: 80px 50px;
+    max-width: 245px;
+  }
+
+  .advantages__item {
+    min-width: 320px;
   }
 }
 
