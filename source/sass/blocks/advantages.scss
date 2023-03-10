@@ -25,6 +25,11 @@
     grid-template-columns: 320px 320px;
     grid-template-rows: 360px 360px;
   }
+
+  @include vp-767 {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__wrapper {
@@ -32,7 +37,10 @@
 
   @include vp-1023 {
     padding: 80px 50px;
-    max-width: 245px;
+  }
+
+  @include vp-767 {
+    padding: 50px 25px;
   }
 }
 
@@ -50,10 +58,30 @@
   @include vp-1023 {
     min-width: 320px;
   }
+
+  @include vp-767 {
+    min-width: 270px;
+  }
+}
+
+.advantages__image {
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .advantages__item-wrapper {
   padding: 40px 45px;
+
+  @include vp-767 {
+    padding: 30px 30px 37px;
+    min-height: 339px;
+
+    &:nth-child(3n) {
+      min-height: 327px;
+    }
+  }
 }
 
 .advantages__item-wrapper::before {
@@ -73,6 +101,17 @@
   color: $color-deep-sky-blue;
   margin-top: 14px;
   margin-bottom: 12px;
+
+  @include vp-1023 {
+    margin-top: 9px;
+    margin-bottom: 6px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 .advantages__item:hover h3,
@@ -84,6 +123,11 @@
   font-size: 16px;
   line-height: 22px;
   font-family: "PT Mono", "Courier New", monospace;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .advantages__item:hover span {
