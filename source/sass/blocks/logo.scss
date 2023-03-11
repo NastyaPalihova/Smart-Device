@@ -14,7 +14,7 @@
   }
 }
 
-.logo__name-wrapper h2 {
+.logo__name-wrapper p:first-child {
   font-weight: 700;
   color: $color-alice-blue;
   margin: 0;
@@ -29,7 +29,7 @@
   max-width: none;
 }
 
-.logo__name-wrapper p {
+.logo__name-wrapper p:not(:first-child) {
   color: rgba(255, 255, 255, 0.7);
   font-family: "Roboto", "Arial", sans-serif;
   margin: 0;
