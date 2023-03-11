@@ -1750,6 +1750,8 @@ button,
   padding: 40px 45px;
 }
 
+/* костыль для ПП на мобайле */
+
 .advantages__item-wrapper::before {
   position: absolute;
   content: "";
@@ -1812,7 +1814,8 @@ button,
   margin: 0 0 12px;
 }
 
-.company p {
+.company p,
+.company__span-mobile {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
@@ -1852,11 +1855,16 @@ button,
   top: 72px;
   left: 14.7%;
   background-image: url("../img/mask.png");
+  background-size: contain;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
 .company__more--hidden {
+  display: none;
+}
+
+.company__span-mobile {
   display: none;
 }
 
@@ -2001,11 +2009,12 @@ button,
   .first-screen h1 {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 1px;
+    margin-bottom: 6px;
   }
 
   .first-screen p {
-    margin-bottom: 72px;
+    margin-bottom: 77px;
+    line-height: 30px;
   }
 
   .first-screen__button {
@@ -2021,29 +2030,37 @@ button,
   }
 
   .advantages__wrapper {
-    padding: 80px 50px;
+    padding: 80px 50px 75px 50px;
   }
 
   .advantages__item {
     min-width: 320px;
   }
 
+  .advantages__item-wrapper {
+    padding: 40px 44px;
+  }
+
   .advantages__item h3 {
-    margin-top: 9px;
+    margin-top: 12px;
     margin-bottom: 6px;
   }
 
   .company {
-    padding: 80px 50px;
+    padding: 0 50px 80px 50px;
+  }
+
+  .company p:last-child {
+    margin-bottom: 14px;
   }
 
   .company__wrapper {
-    margin-left: 179px;
+    margin-left: 175px;
   }
 
   .company__wrapper::before {
-    top: 146px;
-    left: -5.3%;
+    top: 58px;
+    left: -2.8%;
   }
 }
 
@@ -2293,8 +2310,9 @@ button,
     min-height: 339px;
   }
 
-  .advantages__item-wrapper:nth-child(3n) {
-    min-height: 327px;
+  .advantages__item-wrapper--detective,
+  .advantages__item-wrapper--money {
+    min-height: 325px;
   }
 
   .advantages__item h3 {
@@ -2309,11 +2327,42 @@ button,
   }
 
   .company {
-    padding: 50px 25px;
+    padding: 0 25px 78px 25px;
+  }
+
+  .company h3 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .company p,
+  .company__span-mobile {
+    line-height: 19px;
+    font-size: 14px;
+  }
+
+  .company p:last-child {
+    margin-bottom: 12px;
+  }
+
+  .company__button {
+    padding: 8px 39px;
+  }
+
+  .company__wrapper {
+    margin-left: 0;
   }
 
   .company__wrapper::before {
     display: none;
+  }
+
+  .company__span {
+    display: none;
+  }
+
+  .company__span-mobile {
+    display: block;
   }
 }
 
