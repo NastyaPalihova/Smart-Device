@@ -1917,9 +1917,10 @@ button,
 
 .form {
   width: 100%;
-  background-color: #00b2ff;
   position: relative;
   padding: 170px 360px 248px 170px;
+  background: -o-linear-gradient(311deg, #026593 0 33.9%, #00b2ff 33.9% 100%);
+  background: linear-gradient(139deg, #026593 0 33.9%, #00b2ff 33.9% 100%);
 }
 
 .form__button {
@@ -2092,16 +2093,15 @@ button,
   margin-left: auto;
 }
 
-.form__polygon {
-  position: absolute;
-  top: -76px;
-  left: -4px;
+.form__paper-airplane {
+  padding-top: 82px;
+  margin-right: 120px;
 }
 
-.form__paper-airplane {
-  position: absolute;
-  top: 247px;
-  left: 350px;
+.form__wrapper-with-plane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .company {

@@ -1,8 +1,8 @@
 .form {
   width: 100%;
-  background-color: $color-deep-sky-blue;
   position: relative;
   padding: 170px 360px 248px 170px;
+  background: linear-gradient(139deg, $color-cerulean 0 33.9%, $color-deep-sky-blue 33.9% 100%);
 }
 
 .form__button {
@@ -140,14 +140,23 @@
   margin-left: auto;
 }
 
-.form__polygon {
-  position: absolute;
-  top: -76px;
-  left: -4px;
-}
+// .form__polygon {
+//   position: absolute;
+//   top: -76px;
+//   left: -4px;
+// }
+
+// .form__paper-airplane {
+//   position: absolute;
+//   top: 247px;
+//   left: 350px;
+// }
 
 .form__paper-airplane {
-  position: absolute;
-  top: 247px;
-  left: 350px;
+  padding-top: 82px;
+  margin-right: 120px;
+}
+
+.form__wrapper-with-plane {
+  display: flex;
 }
