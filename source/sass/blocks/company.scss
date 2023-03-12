@@ -76,30 +76,16 @@
   }
 }
 
-.company__wrapper::before {
+.company__image {
   position: absolute;
-  content: "2022";
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 156px;
-  line-height: 220px;
-  color: transparent;
-  transform: rotate(-90deg);
-  top: 72px;
-  left: 14.7%;
-  background-image: url("../img/mask.png");
+  content: "";
+  top: 21px;
+  left: 18.1%;
   background-size: contain;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/mask@2x.png");
-  }
-
-  background-clip: text;
-
   @include vp-1023 {
-    top: 58px;
-    left: -2.8%;
+    top: 6px;
+    left: 6.2%;
   }
 
   @include vp-767 {

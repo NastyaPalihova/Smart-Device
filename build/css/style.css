@@ -1962,24 +1962,12 @@ button,
   margin-left: 252px;
 }
 
-.company__wrapper::before {
+.company__image {
   position: absolute;
-  content: "2022";
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 156px;
-  line-height: 220px;
-  color: transparent;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  top: 72px;
-  left: 14.7%;
-  background-image: url("../img/mask.png");
+  content: "";
+  top: 21px;
+  left: 18.1%;
   background-size: contain;
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .company__more--hidden {
@@ -2222,9 +2210,9 @@ button,
     margin-left: 175px;
   }
 
-  .company__wrapper::before {
-    top: 58px;
-    left: -2.8%;
+  .company__image {
+    top: 6px;
+    left: 6.2%;
   }
 }
 
@@ -2557,7 +2545,7 @@ button,
     margin-left: 0;
   }
 
-  .company__wrapper::before {
+  .company__image {
     display: none;
   }
 
@@ -2648,11 +2636,5 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .company__wrapper::before {
-    background-image: url("../img/mask@2x.png");
   }
 }
