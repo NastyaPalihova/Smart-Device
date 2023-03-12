@@ -1917,10 +1917,9 @@ button,
 
 .form {
   width: 100%;
-  padding: 170px;
   background-color: #00b2ff;
   position: relative;
-  padding-bottom: 248px;
+  padding: 170px 360px 248px 170px;
 }
 
 .form__button {
@@ -1954,10 +1953,13 @@ button,
 }
 
 .form__name-phone-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 275px 275px;
+  grid-template-columns: 275px 275px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
 }
 
 .form__name-phone-wrapper input,
@@ -2073,6 +2075,7 @@ button,
 
 .form__submit-section {
   position: relative;
+  min-width: 580px;
 }
 
 .form__agree {
@@ -2086,8 +2089,7 @@ button,
 .form__wrapper {
   margin-top: -4px;
   max-width: 580px;
-  margin-left: 51.3%;
-  margin-right: 12.1%;
+  margin-left: auto;
 }
 
 .form__polygon {
