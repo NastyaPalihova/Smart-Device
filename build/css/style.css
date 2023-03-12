@@ -807,7 +807,7 @@ button,
   pointer-events: auto;
 }
 
-.modal-h1 {
+.modal h1 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
 }
@@ -1459,7 +1459,7 @@ button,
   margin: 0 auto;
   height: 100%;
   max-width: 1220px;
-  padding-top: 50px;
+  padding-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1493,6 +1493,7 @@ button,
 .footer__link p {
   margin: 0;
   padding: 0;
+  line-height: 24px;
 }
 
 .footer__contacts-item .footer__text:first-child {
@@ -1513,7 +1514,7 @@ button,
 }
 
 .footer__contacts-item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .footer__contacts-item {
@@ -1915,9 +1916,190 @@ button,
 }
 
 .form {
-  min-height: 500px;
   width: 100%;
+  padding: 170px;
   background-color: #00b2ff;
+  position: relative;
+  padding-bottom: 248px;
+}
+
+.form__button {
+  background-color: #041427;
+  border-color: transparent;
+  padding: 14px 25px 9px 25px;
+  min-width: 265px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.form__section-wrapper {
+  max-width: 580px;
+}
+
+.form h2 {
+  margin: 0 0 12px -6px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.form p {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__name-phone-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.form__name-phone-wrapper input,
+.form__section-wrapper textarea {
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  padding: 16px 15px;
+  border: none;
+}
+
+.form__section-wrapper textarea {
+  width: 580px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 23px 15px 4px;
+}
+
+.form__name-phone-wrapper input {
+  width: 275px;
+}
+
+.form__name-phone-wrapper input::-webkit-input-placeholder,
+.form__section-wrapper textarea::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__name-phone-wrapper input::-moz-placeholder,
+.form__section-wrapper textarea::-moz-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__name-phone-wrapper input:-ms-input-placeholder,
+.form__section-wrapper textarea:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__name-phone-wrapper input::-ms-input-placeholder,
+.form__section-wrapper textarea::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__name-phone-wrapper input::placeholder,
+.form__section-wrapper textarea::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__agree span {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  max-width: 234px;
+  opacity: 0.8;
+}
+
+.form__agree-label {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.form__agree-mark {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.form__agree-label:hover .form__agree-mark,
+.form__agree span:hover {
+  opacity: 0.6;
+}
+
+.form__agree-label:active .form__agree-mark,
+.form__agree span:active {
+  opacity: 0.3;
+}
+
+.form__agree-label input:disabled + .form__agree-mark {
+  opacity: 0.1;
+}
+
+.form__agree-label input[type=checkbox]:checked + .form__agree-mark::before {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 4px;
+  height: 6px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
+}
+
+.form__submit-section {
+  position: relative;
+}
+
+.form__agree {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  line-height: 15px;
+  max-width: 260px;
+}
+
+.form__wrapper {
+  margin-top: -4px;
+  max-width: 580px;
+  margin-left: 51.3%;
+  margin-right: 12.1%;
+}
+
+.form__polygon {
+  position: absolute;
+  top: -76px;
+  left: -4px;
+}
+
+.form__paper-airplane {
+  position: absolute;
+  top: 247px;
+  left: 350px;
 }
 
 .company {
