@@ -1803,6 +1803,10 @@ button,
   margin-bottom: 53px;
 }
 
+.catalog h2:before {
+  content: "Smart Device предлагает следующие товары и услуги";
+}
+
 .catalog__wrapper {
   max-width: 1300px;
   margin: 0 auto;
@@ -2484,6 +2488,46 @@ button,
   .advantages__item span {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 86px;
+  }
+
+  .catalog h2 {
+    font-size: 28px;
+    line-height: 39px;
+    max-width: 250px;
+    margin-bottom: 28px;
+  }
+
+  .catalog h2:before {
+    content: "Товары и услуги Smart Device";
+  }
+
+  .catalog__wrapper-content {
+    margin: 0 25px;
+  }
+
+  .catalog__item-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .catalog__item-link span {
+    padding: 26px 66px 50px 30px;
+  }
+
+  .catalog__button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .catalog__button::before {
+    bottom: 44%;
+    width: 5px;
+    height: 5px;
   }
 
   .company {

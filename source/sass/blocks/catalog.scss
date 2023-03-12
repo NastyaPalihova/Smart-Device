@@ -8,6 +8,11 @@
     padding-top: 57px;
     padding-bottom: 75px;
   }
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 86px;
+  }
 }
 
 .catalog h2 {
@@ -22,6 +27,21 @@
   @include vp-1023 {
     margin-bottom: 37px;
   }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+    max-width: 250px;
+    margin-bottom: 28px;
+  }
+}
+
+.catalog h2:before {
+  content: "Smart Device предлагает следующие товары и услуги";
+
+  @include vp-767 {
+    content: "Товары и услуги Smart Device";
+  }
 }
 
 .catalog__wrapper {
@@ -34,6 +54,10 @@
 
   @include vp-1023 {
     margin: 0 50px;
+  }
+
+  @include vp-767 {
+    margin: 0 25px;
   }
 }
 
@@ -84,6 +108,11 @@
   line-height: 30px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   position: relative;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .catalog__item-link span {
@@ -97,6 +126,10 @@
 
   @include vp-1023 {
     padding: 37px 37px 50px 44px;
+  }
+
+  @include vp-767 {
+    padding: 26px 66px 50px 30px;
   }
 }
 
@@ -130,6 +163,11 @@
   &:active {
     opacity: 0.3;
   }
+
+  @include vp-767 {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .catalog__button::before {
@@ -144,4 +182,10 @@
   border-bottom: none;
   border-left: none;
   border-color: $color-default-white;
+
+  @include vp-767 {
+    bottom: 44%;
+    width: 5px;
+    height: 5px;
+  }
 }
