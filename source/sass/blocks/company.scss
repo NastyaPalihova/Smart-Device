@@ -1,5 +1,5 @@
 .company {
-  padding: 21px 18.1% 100px;
+  padding: 21px 18.1% 120px;
   display: flex;
   position: relative;
 
@@ -112,8 +112,18 @@
 }
 
 .company__span {
+  margin-bottom: 39px;
+
   @include vp-767 {
     display: none;
+  }
+}
+
+.company__more {
+  margin-top: -19px;
+
+  @include vp-767 {
+    margin-top: 0;
   }
 }
 

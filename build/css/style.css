@@ -1689,7 +1689,7 @@ button,
   font-family: "PT Mono", "Courier New", monospace;
   text-transform: none;
   font-size: 22px;
-  line-height: 24px;
+  line-height: 35px;
   max-width: 685px;
   margin: 0 0 62px 0;
 }
@@ -1789,7 +1789,7 @@ button,
 .catalog {
   width: 100%;
   background-color: #041427;
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 140px;
 }
 
@@ -1800,7 +1800,7 @@ button,
   line-height: 51px;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .catalog__wrapper {
@@ -1917,7 +1917,7 @@ button,
 }
 
 .company {
-  padding: 21px 18.1% 100px;
+  padding: 21px 18.1% 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1980,6 +1980,14 @@ button,
 
 .company__more--hidden {
   display: none;
+}
+
+.company__span {
+  margin-bottom: 39px;
+}
+
+.company__more {
+  margin-top: -19px;
 }
 
 .company__span-mobile {
@@ -2162,6 +2170,40 @@ button,
   .advantages__item h3 {
     margin-top: 12px;
     margin-bottom: 6px;
+  }
+
+  .catalog {
+    padding-top: 57px;
+    padding-bottom: 75px;
+  }
+
+  .catalog h2 {
+    margin-bottom: 37px;
+  }
+
+  .catalog__wrapper-content {
+    margin: 0 50px;
+  }
+
+  .catalog__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .catalog__item::before {
+    background: rgba(4, 24, 39, 0.5);
+  }
+
+  .catalog__item-link span {
+    padding: 37px 37px 50px 44px;
+  }
+
+  .catalog__item-image {
+    height: 250px;
+    width: 100%;
   }
 
   .company {
@@ -2477,6 +2519,10 @@ button,
 
   .company__span {
     display: none;
+  }
+
+  .company__more {
+    margin-top: 0;
   }
 
   .company__span-mobile {

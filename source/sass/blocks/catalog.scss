@@ -1,8 +1,13 @@
 .catalog {
   width: 100%;
   background-color: $color-black-pearl;
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 140px;
+
+  @include vp-1023 {
+    padding-top: 57px;
+    padding-bottom: 75px;
+  }
 }
 
 .catalog h2 {
@@ -12,7 +17,11 @@
   line-height: 51px;
   color: $color-default-white;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+
+  @include vp-1023 {
+    margin-bottom: 37px;
+  }
 }
 
 .catalog__wrapper {
@@ -22,6 +31,10 @@
 
 .catalog__wrapper-content {
   margin: 0 40px;
+
+  @include vp-1023 {
+    margin: 0 50px;
+  }
 }
 
 .catalog__list {
@@ -30,6 +43,11 @@
   list-style: none;
   display: flex;
   gap: 85px;
+
+  @include vp-1023 {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .catalog__item {
@@ -54,6 +72,10 @@
   top: 0;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   z-index: 1;
+
+  @include vp-1023 {
+    background: rgba(4, 24, 39, 0.5);
+  }
 }
 
 .catalog__item-link {
@@ -72,12 +94,21 @@
   z-index: 1;
   padding: 50px 32px 50px 40px;
   max-width: 230px;
+
+  @include vp-1023 {
+    padding: 37px 37px 50px 44px;
+  }
 }
 
 .catalog__item-image {
   height: 650px;
   width: 350px;
   object-fit: cover;
+
+  @include vp-1023 {
+    height: 250px;
+    width: 100%;
+  }
 }
 
 .catalog__button {
