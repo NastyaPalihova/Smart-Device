@@ -7,11 +7,18 @@
 
   @include vp-1023 {
     margin: 0;
+    margin-top: 10px;
+    gap: 23px;
+    max-height: 40px;
   }
 }
 
 .social-list__item {
   padding: 3px 5px 0 5px;
+
+  @include vp-1023 {
+    padding: 3px 1px 0;
+  }
 }
 
 .social-list__item-link {

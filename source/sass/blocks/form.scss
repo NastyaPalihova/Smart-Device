@@ -2,7 +2,16 @@
   width: 100%;
   position: relative;
   padding: 170px 360px 248px 170px;
-  background: linear-gradient(139deg, $color-cerulean 0 33.9%, $color-deep-sky-blue 33.9% 100%);
+  background: linear-gradient(139deg, $color-cerulean 0 33.7%, $color-deep-sky-blue 33.9% 100%);
+
+  @include vp-1023 {
+    background: $color-deep-sky-blue;
+    padding: 50px 50px 126px 50px;
+  }
+
+  @include vp-767 {
+    padding: 50px 25px 145px;
+  }
 }
 
 .form__button {
@@ -12,10 +21,29 @@
   min-width: 265px;
   font-size: 16px;
   line-height: 19px;
+
+  @include vp-767 {
+    min-width: 270px;
+  }
+}
+
+.form__paper-airplane-wrapper {
+  flex-shrink: 1;
+  padding-top: 78px;
+  padding-left: 179px;
+
+  @include vp-1023 {
+    display: none;
+  }
 }
 
 .form__section-wrapper {
   max-width: 580px;
+}
+
+.form__section input,
+.form__section textarea {
+  color: $color-default-white;
 }
 
 .form h2 {
@@ -25,6 +53,17 @@
   font-size: 36px;
   line-height: 51px;
   color: $color-default-white;
+
+  @include vp-1023 {
+    margin-left: 0;
+    line-height: 44px;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 6px;
+  }
 }
 
 .form p {
@@ -33,12 +72,32 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 33px;
+  }
 }
 
 .form__name-phone-wrapper {
   display: grid;
   grid-template-columns: 275px 275px;
   column-gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: 320px 320px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .form__name-phone-wrapper input,
@@ -54,10 +113,31 @@
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 23px 15px 4px;
+
+  @include vp-1023 {
+    width: 670px;
+    padding: 30px 15px 30px;
+    max-height: 155px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+    padding: 23px 15px 27px 15px;
+    max-height: 180px;
+    margin-bottom: 27px;
+  }
 }
 
 .form__name-phone-wrapper input {
   width: 275px;
+
+  @include vp-1023 {
+    width: 320px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
 }
 
 .form__name-phone-wrapper input::placeholder,
@@ -89,6 +169,10 @@
   height: 15px;
   border: 1px solid $color-default-white;
   border-radius: 2px;
+
+  @include vp-767 {
+    top: 6px;
+  }
 }
 
 .form__agree-label:hover .form__agree-mark,
@@ -124,6 +208,10 @@
 .form__submit-section {
   position: relative;
   min-width: 580px;
+
+  @include vp-767 {
+    min-width: 270px;
+  }
 }
 
 .form__agree {
@@ -132,31 +220,35 @@
   right: 14px;
   line-height: 15px;
   max-width: 260px;
+
+  @include vp-1023 {
+    top: 11px;
+    right: -19px;
+  }
+
+  @include vp-767 {
+    margin-top: 21px;
+    top: 49px;
+    left: -5px;
+  }
 }
 
 .form__wrapper {
   margin-top: -4px;
   max-width: 580px;
   margin-left: auto;
-}
 
-// .form__polygon {
-//   position: absolute;
-//   top: -76px;
-//   left: -4px;
-// }
+  @include vp-1023 {
+    margin-left: 0;
+    max-width: 670px;
+  }
 
-// .form__paper-airplane {
-//   position: absolute;
-//   top: 247px;
-//   left: 350px;
-// }
-
-.form__paper-airplane {
-  padding-top: 82px;
-  margin-right: 120px;
+  @include vp-767 {
+    max-width: 270px;
+  }
 }
 
 .form__wrapper-with-plane {
   display: flex;
+  gap: 30px;
 }

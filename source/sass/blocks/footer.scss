@@ -5,6 +5,7 @@
 
   @include vp-1023 {
     padding: 0 50px;
+    padding-bottom: 53px;
   }
 
   @include vp-767 {
@@ -27,7 +28,7 @@
 .footer__social-list {
   @include vp-767 {
     justify-content: center;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     margin-top: 4px;
     margin-left: 6px;
   }
@@ -41,13 +42,13 @@
   display: flex;
 
   @include vp-767 {
-    padding-top: 15px;
+    padding-top: 31px;
     margin-bottom: 35px;
   }
 
   @include vp-1023 {
-    padding-top: 16px;
     display: block;
+    width: 100%;
   }
 
   @include vp-1439 {
@@ -78,7 +79,7 @@
   overflow: hidden;
 
   @include vp-767 {
-    margin: 0 0 15px 25px;
+    margin: 0 0 15px 24px;
   }
 }
 
@@ -103,6 +104,16 @@
   margin: 0;
   padding: 0;
   line-height: 24px;
+
+  @include vp-767 {
+    line-height: 20px;
+  }
+}
+
+.footer__contacts-item:first-child {
+  @include vp-767 {
+    padding-bottom: 10px;
+  }
 }
 
 .footer__contacts-item .footer__text:first-child {
@@ -133,13 +144,22 @@
 
 .footer__contacts-item {
   line-height: 21px;
+
+  @include vp-767 {
+    line-height: 23px;
+  }
 }
 
 .footer__nav {
   margin-top: 11px;
+  max-width: 220px;
+
+  @include vp-1023 {
+    margin-top: 0;
+  }
 
   @include vp-767 {
-    margin-top: 0;
+    max-width: none;
     border: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
@@ -148,9 +168,12 @@
   margin-left: 30px;
   margin-top: 10px;
 
+  @include vp-1023 {
+    margin-top: 0;
+  }
+
   @include vp-767 {
     margin-left: 0;
-    margin-top: 0;
     border: 1px solid rgba(248, 253, 255, 0.7);
     border-top: none;
   }
@@ -162,9 +185,15 @@
 
 .footer__nav-contacts-wrapper {
   display: flex;
+  gap: 251px;
+
+  @include vp-1023 {
+    gap: 116px;
+}
 
   @include vp-767 {
     flex-direction: column;
+    gap: 0;
   }
 }
 

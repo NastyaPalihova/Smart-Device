@@ -1523,6 +1523,7 @@ button,
 
 .footer__nav {
   margin-top: 11px;
+  max-width: 220px;
 }
 
 .footer__contacts {
@@ -1538,6 +1539,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 251px;
 }
 
 .logo {
@@ -1608,16 +1610,21 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  max-height: 130px;
+  max-height: 150px;
   row-gap: 6px;
+  -webkit-column-gap: 31px;
+  -moz-column-gap: 31px;
+  column-gap: 31px;
   max-width: 470px;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .nav h3 {
@@ -1919,8 +1926,8 @@ button,
   width: 100%;
   position: relative;
   padding: 170px 360px 248px 170px;
-  background: -o-linear-gradient(311deg, #026593 0 33.9%, #00b2ff 33.9% 100%);
-  background: linear-gradient(139deg, #026593 0 33.9%, #00b2ff 33.9% 100%);
+  background: -o-linear-gradient(311deg, #026593 0 33.7%, #00b2ff 33.9% 100%);
+  background: linear-gradient(139deg, #026593 0 33.7%, #00b2ff 33.9% 100%);
 }
 
 .form__button {
@@ -1932,8 +1939,20 @@ button,
   line-height: 19px;
 }
 
+.form__paper-airplane-wrapper {
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  padding-top: 78px;
+  padding-left: 179px;
+}
+
 .form__section-wrapper {
   max-width: 580px;
+}
+
+.form__section input,
+.form__section textarea {
+  color: #ffffff;
 }
 
 .form h2 {
@@ -2093,15 +2112,11 @@ button,
   margin-left: auto;
 }
 
-.form__paper-airplane {
-  padding-top: 82px;
-  margin-right: 120px;
-}
-
 .form__wrapper-with-plane {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
 }
 
 .company {
@@ -2268,6 +2283,7 @@ button,
 
   .footer {
     padding: 0 50px;
+    padding-bottom: 53px;
   }
 
   .footer__logo {
@@ -2275,8 +2291,8 @@ button,
   }
 
   .footer__container {
-    padding-top: 16px;
     display: block;
+    width: 100%;
   }
 
   .footer__wrapper {
@@ -2289,8 +2305,27 @@ button,
     margin-right: 0;
   }
 
+  .footer__nav {
+    margin-top: 0;
+  }
+
+  .footer__contacts {
+    margin-top: 0;
+  }
+
+  .footer__nav-contacts-wrapper {
+    gap: 116px;
+  }
+
   .social-list {
     margin: 0;
+    margin-top: 10px;
+    gap: 23px;
+    max-height: 40px;
+  }
+
+  .social-list__item {
+    padding: 3px 1px 0;
   }
 
   .nav__list {
@@ -2299,8 +2334,12 @@ button,
     max-width: 220px;
   }
 
+  .nav__list-item p {
+    line-height: 24px;
+  }
+
   .nav__list-item {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   .first-screen__wrapper {
@@ -2339,13 +2378,18 @@ button,
     min-width: 320px;
   }
 
-  .advantages__item-wrapper {
+  .advantages__item-wrapper:first-child {
     padding: 40px 44px;
   }
 
   .advantages__item h3 {
     margin-top: 12px;
     margin-bottom: 6px;
+  }
+
+  .advantages__item:last-child h3 {
+    margin-top: 7px;
+    margin-bottom: 3px;
   }
 
   .catalog {
@@ -2380,6 +2424,49 @@ button,
   .catalog__item-image {
     height: 250px;
     width: 100%;
+  }
+
+  .form {
+    background: #00b2ff;
+    padding: 50px 50px 126px 50px;
+  }
+
+  .form__paper-airplane-wrapper {
+    display: none;
+  }
+
+  .form h2 {
+    margin-left: 0;
+    line-height: 44px;
+  }
+
+  .form p {
+    margin-bottom: 25px;
+  }
+
+  .form__name-phone-wrapper {
+    -ms-grid-columns: 320px 320px;
+    grid-template-columns: 320px 320px;
+  }
+
+  .form__section-wrapper textarea {
+    width: 670px;
+    padding: 30px 15px 30px;
+    max-height: 155px;
+  }
+
+  .form__name-phone-wrapper input {
+    width: 320px;
+  }
+
+  .form__agree {
+    top: 11px;
+    right: -19px;
+  }
+
+  .form__wrapper {
+    margin-left: 0;
+    max-width: 670px;
   }
 
   .company {
@@ -2464,13 +2551,13 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     margin-top: 4px;
     margin-left: 6px;
   }
 
   .footer__container {
-    padding-top: 15px;
+    padding-top: 31px;
     margin-bottom: 35px;
   }
 
@@ -2479,7 +2566,7 @@ button,
   }
 
   .footer__contacts-list {
-    margin: 0 0 15px 25px;
+    margin: 0 0 15px 24px;
   }
 
   .footer__contacts-name {
@@ -2487,19 +2574,30 @@ button,
     padding: 22px 24px 17px 24px;
   }
 
+  .footer__link p {
+    line-height: 20px;
+  }
+
+  .footer__contacts-item:first-child {
+    padding-bottom: 10px;
+  }
+
   .footer__link {
     font-size: 14px;
     line-height: 19px;
   }
 
+  .footer__contacts-item {
+    line-height: 23px;
+  }
+
   .footer__nav {
-    margin-top: 0;
+    max-width: none;
     border: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   .footer__contacts {
     margin-left: 0;
-    margin-top: 0;
     border: 1px solid rgba(248, 253, 255, 0.7);
     border-top: none;
   }
@@ -2509,10 +2607,16 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 0;
   }
 
   .nav__list {
     margin-left: 25px;
+    max-height: none;
+  }
+
+  .nav__list-item p {
+    line-height: inherit;
   }
 
   .nav h3 {
@@ -2593,7 +2697,7 @@ button,
   .first-screen p {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 
   .first-screen__button {
@@ -2629,7 +2733,7 @@ button,
   }
 
   .advantages__wrapper {
-    padding: 50px 25px;
+    padding: 50px 25px 46px 25px;
   }
 
   .advantages__item {
@@ -2643,7 +2747,11 @@ button,
 
   .advantages__item-wrapper {
     padding: 30px 30px 37px;
-    min-height: 339px;
+    min-height: 341px;
+  }
+
+  .advantages__item-wrapper:first-child {
+    padding: 30px 30px 37px;
   }
 
   .advantages__item-wrapper--detective,
@@ -2653,6 +2761,12 @@ button,
 
   .advantages__item h3 {
     font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 33px;
+  }
+
+  .advantages__item:last-child h3 {
     margin-top: 8px;
     margin-bottom: 8px;
   }
@@ -2700,6 +2814,66 @@ button,
     bottom: 44%;
     width: 5px;
     height: 5px;
+  }
+
+  .form {
+    padding: 50px 25px 145px;
+  }
+
+  .form__button {
+    min-width: 270px;
+  }
+
+  .form h2 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 6px;
+  }
+
+  .form p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 33px;
+  }
+
+  .form__name-phone-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form__section-wrapper textarea {
+    width: 270px;
+    padding: 23px 15px 27px 15px;
+    max-height: 180px;
+    margin-bottom: 27px;
+  }
+
+  .form__name-phone-wrapper input {
+    width: 270px;
+  }
+
+  .form__agree-mark {
+    top: 6px;
+  }
+
+  .form__submit-section {
+    min-width: 270px;
+  }
+
+  .form__agree {
+    margin-top: 21px;
+    top: 49px;
+    left: -5px;
+  }
+
+  .form__wrapper {
+    max-width: 270px;
   }
 
   .company {
