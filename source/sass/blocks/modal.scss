@@ -74,8 +74,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 15px;
+    right: 15px;
     z-index: 1;
 
     width: 40px;
@@ -123,6 +123,17 @@
 .modal h1 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0 0 3px;
+}
+
+.modal p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 40px;
+  max-width: 380px;
+  margin-top: 0;
 }
 
 .modal__form-wrapper {
@@ -135,4 +146,95 @@
 .modal__button {
   background-color: $color-black-pearl;
   border-color: transparent;
+  min-height: 45px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+}
+
+.modal input,
+.modal textarea {
+  color: $color-default-white;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  padding: 15px;
+  border: none;
+  width: 420px;
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: $color-default-white;
+}
+
+.modal textarea {
+  min-height: 155px;
+  padding-top: 25px;
+  margin-bottom: 7px;
+}
+
+.modal__agree-checkbox {
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+}
+
+
+.modal__agree-checkbox-label {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.modal__agree-mark {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+
+  @include vp-767 {
+    top: 6px;
+  }
+}
+
+.modal__agree-checkbox-label:hover .modal__agree-mark,
+.modal__agree-checkbox-label span:hover {
+  opacity: 0.6;
+}
+
+.modal__agree-checkbox-label:active .modal__agree-mark,
+.modal__agree-checkbox-label span:active {
+  opacity: 0.3;
+}
+
+.modal__agree-checkbox-label input:disabled + .modal__agree-mark {
+  opacity: 0.1;
+}
+
+.modal__agree-checkbox-label input[type="checkbox"]:checked + .modal__agree-mark::before {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 4px;
+  height: 6px;
+  background-color: transparent;
+  color: $color-default-white;
+  border: 1px solid;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.modal__content {
+  width: 500px;
+  position: absolute;
+  top: 146px;
+  left: 702px;
+  padding: 38px 40px 40px 40px;
 }
