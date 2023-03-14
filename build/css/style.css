@@ -740,9 +740,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
+  width: 99%;
   min-height: 100%;
-  padding: 60px 40px;
+  padding: 146px 40px 60px 40px;
 }
 
 .modal__overlay {
@@ -944,9 +944,6 @@ button,
 
 .modal__content {
   width: 500px;
-  position: absolute;
-  top: 146px;
-  left: 702px;
   padding: 38px 40px 40px 40px;
 }
 
