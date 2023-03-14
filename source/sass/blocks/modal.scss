@@ -57,8 +57,8 @@
 
   &__content {
     position: relative;
-    width: 600px;
-    padding: 40px;
+    width: 500px;
+    padding: 38px 40px 40px 40px;
     background-color: $color-deep-sky-blue;
     font-family: "PT Mono", "Courier New", monospace;
     font-size: 16px;
@@ -228,9 +228,4 @@
   border-left: none;
   transform: rotate(45deg);
   content: "";
-}
-
-.modal__content {
-  width: 500px;
-  padding: 38px 40px 40px 40px;
 }

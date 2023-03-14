@@ -756,8 +756,8 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
-  padding: 40px;
+  width: 500px;
+  padding: 38px 40px 40px 40px;
   background-color: #00b2ff;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
@@ -940,11 +940,6 @@ button,
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   content: "";
-}
-
-.modal__content {
-  width: 500px;
-  padding: 38px 40px 40px 40px;
 }
 
 .custom-input,
@@ -1770,6 +1765,7 @@ button,
 
 .first-screen {
   position: relative;
+  background-color: #041427;
 }
 
 .first-screen::before {
@@ -1928,7 +1924,7 @@ button,
   margin-bottom: 53px;
 }
 
-.catalog h2:before {
+.catalog h2::before {
   content: "Smart Device предлагает следующие товары и услуги";
 }
 
@@ -2909,7 +2905,7 @@ button,
     margin-bottom: 28px;
   }
 
-  .catalog h2:before {
+  .catalog h2::before {
     content: "Товары и услуги Smart Device";
   }
 

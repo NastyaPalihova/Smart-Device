@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordion} from './modules/accordion';
 import {initMoreText} from './modules/init-more-text';
+import {initPhoneMask} from './modules/form-validate/phone-mask';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initAccordion();
     initMoreText();
+    initPhoneMask();
     const form = new Form();
     window.form = form;
     form.init();

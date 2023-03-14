@@ -36,7 +36,7 @@
   }
 }
 
-.catalog h2:before {
+.catalog h2::before {
   content: "Smart Device предлагает следующие товары и услуги";
 
   @include vp-767 {
