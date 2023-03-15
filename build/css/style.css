@@ -1788,6 +1788,7 @@ button,
   position: relative;
   background-color: #041427;
   height: 100%;
+  overflow: hidden;
 }
 
 .first-screen::before {
