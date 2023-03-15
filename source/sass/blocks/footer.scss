@@ -189,11 +189,10 @@
 
   @include vp-1023 {
     gap: 116px;
-}
+  }
 
   @include vp-767 {
     flex-direction: column;
     gap: 0;
   }
 }
-
