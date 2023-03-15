@@ -1787,6 +1787,7 @@ button,
 .first-screen {
   position: relative;
   background-color: #041427;
+  height: 100%;
 }
 
 .first-screen::before {
