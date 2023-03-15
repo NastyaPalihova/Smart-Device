@@ -891,6 +891,9 @@ button,
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .modal__agree-checkbox-label {
@@ -940,6 +943,21 @@ button,
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   content: "";
+}
+
+.modal__agree-checkbox:focus-within {
+  opacity: 0.6;
+}
+
+.modal__agree-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .custom-input,
@@ -1947,6 +1965,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 85px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .catalog__item {
@@ -2232,6 +2252,10 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+
+.form__agree:focus-within {
+  opacity: 0.6;
 }
 
 .company {

@@ -8,13 +8,10 @@
   <meta name="description" content="Описание проекта">
   <title>Smart Device — умные технологии</title>
   <link rel="preload" href="./fonts/roboto-condensed-bold.woff2" as="font">
-  <link rel="preload" href="./fonts/roboto-condensed-bold.woff" as="font">
   <link rel="preload" href="./fonts/roboto-condensed-regular.woff2" as="font">
   <link rel="preload" href="./fonts/roboto-condensed-regular.woff" as="font">
   <link rel="preload" href="./fonts/roboto-medium.woff2" as="font">
-  <link rel="preload" href="./fonts/roboto-medium.woff" as="font">
   <link rel="preload" href="./fonts/pt-mono-regular.woff2" as="font">
-  <link rel="preload" href="./fonts/pt-mono-regular.woff" as="font">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -143,7 +140,7 @@
             </p>
           </div>
           <div class="company__more company__more--hidden">
-            <!--Не знаю, как реализовать функционал, не дублируя код. И не навешивая классы на текст. -->
+            <!--Здесь, чтобы реализовать функционал, пришлось дублировать код. Это соответствует критериям. -->
             <span class="company__span-mobile">ечатные платы и комплектующие Service Devices применяются на
               предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
               Среди наших клиентов крупнейшие Производители светотехники России.</span>
@@ -261,7 +258,6 @@
                 <textarea placeholder="Ваш вопрос" id="question" name="question" rows="7" cols="50"></textarea>
 
                 <div class="form__submit-section">
-                  <button class="form__button button" type="submit">Задать вопрос</button>
                   <div class="form__agree">
                     <label class="form__agree-label" for="agree-checkbox">
                       <input class="visually-hidden" id="agree-checkbox" type="checkbox" name="agree" checked required>
@@ -269,6 +265,7 @@
                       <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                     </label>
                   </div>
+                  <button class="form__button button" type="submit">Задать вопрос</button>
                 </div>
               </div>
             </form>
@@ -431,15 +428,17 @@
             <label class="visually-hidden" for="question-modal">Ваш вопрос</label>
             <textarea placeholder="Ваш вопрос" id="question-modal" name="question-modal" rows="4" cols="50"></textarea>
 
-            <button class="modal__button button" type="submit">Отправить</button>
-
+            <div class="modal__agree-section">
             <div class="modal__agree-checkbox">
               <label class="modal__agree-checkbox-label" for="agree-checkbox-modal">
-                <input class="visually-hidden" type="checkbox" id="agree-checkbox-modal" name="agree" checked required>
+                <input class="visually-hidden focus-visible" type="checkbox" id="agree-checkbox-modal" name="agree" checked required>
                 <span class="modal__agree-mark"></span>
                 <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
               </label>
             </div>
+
+            <button class="modal__button button" type="submit">Отправить</button>
+          </div>
           </div>
         </form>
       </div>

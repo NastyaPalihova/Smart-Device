@@ -177,6 +177,7 @@
   line-height: 16px;
   color: $color-default-white;
   opacity: 0.8;
+  order: 2;
 }
 
 
@@ -228,4 +229,14 @@
   border-left: none;
   transform: rotate(45deg);
   content: "";
+}
+
+.modal__agree-checkbox:focus-within {
+  opacity: 0.6;
+}
+
+.modal__agree-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
