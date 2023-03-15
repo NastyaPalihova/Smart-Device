@@ -1486,8 +1486,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 117px;
-  margin: 0 auto 0 0;
+  gap: 120px;
+  margin: 0 auto 0 22px;
+  min-width: 480px;
 }
 
 .header__contacts-item {
@@ -1497,7 +1498,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: #f2f5f7;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
@@ -1514,6 +1515,7 @@ button,
 }
 
 .header__contacts-text {
+  margin-left: 7px;
   color: inherit;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1526,6 +1528,7 @@ button,
 }
 
 .header__button {
+  padding: 11px 16px;
   margin-right: 61px;
   background-color: transparent;
   border: 1px solid #f2f5f7;
@@ -2380,9 +2383,11 @@ button,
     padding-bottom: 21px;
     gap: 39px;
     margin: 0 29px 0 0;
+    min-width: auto;
   }
 
   .header__contacts-text {
+    margin-left: 0;
     display: none;
   }
 
