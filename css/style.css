@@ -707,7 +707,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -915,6 +915,7 @@ button,
 .modal__agree-checkbox-label:hover .modal__agree-mark,
 .modal__agree-checkbox-label span:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .modal__agree-checkbox-label:active .modal__agree-mark,
@@ -1693,27 +1694,9 @@ button,
   opacity: 0.3;
 }
 
-.logo__name-wrapper p:first-child {
-  font-weight: 700;
-  color: #f2f5f7;
-  margin: 0;
-  font-size: 25px;
-  padding-top: 10px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  white-space: nowrap;
-}
-
 .logo__image {
   padding-top: 3px;
   max-width: none;
-}
-
-.logo__name-wrapper p:not(:first-child) {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: "Roboto", "Arial", sans-serif;
-  margin: 0;
-  font-size: 12px;
-  font-weight: 500;
 }
 
 .social-list {
@@ -1724,6 +1707,9 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+  max-width: 194px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .social-list__item {
@@ -1967,8 +1953,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 85px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .catalog__item {
@@ -1978,6 +1962,7 @@ button,
 .catalog__item:hover,
 .catalog__item:focus {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .catalog__item:active {
@@ -2032,6 +2017,8 @@ button,
   bottom: 0;
   border-radius: 3px 0 0 0;
   z-index: 1;
+  outline: none;
+  border: none;
 }
 
 .catalog__button:hover,
@@ -2200,6 +2187,7 @@ button,
 .form__agree-label:hover .form__agree-mark,
 .form__agree span:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .form__agree-label:active .form__agree-mark,
@@ -2391,6 +2379,7 @@ button,
   .header {
     padding: 0 50px;
     min-height: 100px;
+    position: absolute;
   }
 
   .header__wrapper {
@@ -2461,6 +2450,8 @@ button,
   }
 
   .social-list {
+    max-width: 417px;
+    overflow: hidden;
     margin: 0;
     margin-top: 10px;
     gap: 23px;
@@ -2709,6 +2700,8 @@ button,
 
   .footer__wrapper {
     display: block;
+    margin-left: 70px;
+    margin-right: 70px;
   }
 
   .footer__contacts-list {
@@ -2754,6 +2747,15 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 0;
+  }
+
+  .social-list {
+    max-width: 314px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .nav__list {
@@ -2971,6 +2973,10 @@ button,
     min-width: 270px;
   }
 
+  .form__section-wrapper {
+    max-width: 100%;
+  }
+
   .form h2 {
     font-size: 30px;
     line-height: 42px;
@@ -2995,14 +3001,14 @@ button,
   }
 
   .form__section-wrapper textarea {
-    width: 270px;
+    width: 100%;
     padding: 23px 15px 27px 15px;
     max-height: 180px;
     margin-bottom: 27px;
   }
 
   .form__name-phone-wrapper input {
-    width: 270px;
+    width: 100%;
   }
 
   .form__agree-mark {
@@ -3020,7 +3026,7 @@ button,
   }
 
   .form__wrapper {
-    max-width: 270px;
+    max-width: 100%;
   }
 
   .company {

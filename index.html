@@ -23,12 +23,8 @@
             <picture>
               <source media="(max-width: 767px)" srcset="./img/svg/logo-mobile.svg" width="35" height="35">
               <img class="header__logo-image logo__image" src="./img/svg/logo.svg" alt="Логотип Smart Device."
-                width="55" height="55">
+                width="215" height="55">
             </picture>
-            <div class="header__logo-name-wrapper logo__name-wrapper">
-              <p>Smart Device</p>
-              <p>умные технологии</p>
-            </div>
           </a>
 
           <ul class="header__contacts-list">
@@ -140,7 +136,7 @@
           </div>
           <div class="company__more company__more--hidden">
             <!--Здесь, чтобы реализовать функционал, пришлось дублировать код. Это соответствует критериям. -->
-            <span class="company__span-mobile">ечатные платы и комплектующие Service Devices применяются на
+            <span class="company__span-mobile">Печатные платы и комплектующие Service Devices применяются на
               предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
               Среди наших клиентов крупнейшие Производители светотехники России.</span>
             <p>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
@@ -177,9 +173,9 @@
                   </picture>
                   <span>Производство печатных плат</span>
                 </a>
-                <a class="catalog__button button" href="#!">
+                <button class="catalog__button button">
                   <span class="visually-hidden">Перейти на&nbsp;страницу</span>
-                </a>
+                </button>
               </li>
               <li class="catalog__item">
                 <a class="catalog__item-link" href="#!">
@@ -198,9 +194,9 @@
                   </picture>
                   <span>Монтаж печатных плат</span>
                 </a>
-                <a class="catalog__button button" href="#!">
+                <button class="catalog__button button">
                   <span class="visually-hidden">Перейти на&nbsp;страницу</span>
-                </a>
+                </button>
               </li>
               <li class="catalog__item">
                 <a class="catalog__item-link" href="#!">
@@ -219,9 +215,9 @@
                   </picture>
                   <span>Комплектующие для светотехники</span>
                 </a>
-                <a class="catalog__button button" href="#!">
+                <button class="catalog__button button">
                   <span class="visually-hidden">Перейти на&nbsp;страницу</span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -280,11 +276,7 @@
       <div class="footer__container">
         <div class="footer__wrapper">
           <a class="footer__logo logo" href="index.html">
-            <img class="logo__image" src="./img/svg/logo.svg" alt="Логотип Smart Device." width="55" height="55">
-            <div class="logo__name-wrapper">
-              <p>Smart Device</p>
-              <p>умные технологии</p>
-            </div>
+            <img class="logo__image" src="./img/svg/logo.svg" alt="Логотип Smart Device." width="215" height="55">
           </a>
 
           <ul class="footer__social-list social-list">
@@ -416,13 +408,12 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get" data-form-validate>
           <div class="modal__form-wrapper">
             <label class="visually-hidden" for="username-modal">Имя</label>
-            <input placeholder="Имя" type="text" name="username-modal" id="username-modal" data-validate-type="text"
-              required>
+            <input placeholder="Имя" type="text" name="username-modal" id="username-modal" data-validate-type="text" data-focus data-required>
 
             <label class="visually-hidden" for="phone-modal">Телефон</label>
             <div class="phone-mask">
               <input placeholder="Телефон" type="tel" name="phone-modal" id="phone-modal" data-validate-type="phone"
-                required>
+              data-required data-focus-visible-added>
             </div>
             <label class="visually-hidden" for="question-modal">Ваш вопрос</label>
             <textarea placeholder="Ваш вопрос" id="question-modal" name="question-modal" rows="4" cols="50"></textarea>
@@ -430,7 +421,7 @@
             <div class="modal__agree-section">
             <div class="modal__agree-checkbox">
               <label class="modal__agree-checkbox-label" for="agree-checkbox-modal">
-                <input class="visually-hidden focus-visible" type="checkbox" id="agree-checkbox-modal" name="agree" checked required>
+                <input class="visually-hidden focus-visible" type="checkbox" id="agree-checkbox-modal" name="agree" checked data-required>
                 <span class="modal__agree-mark"></span>
                 <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
               </label>
