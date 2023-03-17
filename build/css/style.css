@@ -1600,7 +1600,7 @@ button,
 }
 
 .footer__wrapper {
-  margin-right: 14%;
+  margin-right: 13%;
 }
 
 .footer__contacts-list {
@@ -1608,8 +1608,6 @@ button,
   list-style: none;
   padding: 0;
   max-width: 345px;
-  max-height: 180px;
-  overflow: hidden;
 }
 
 .footer__contacts-name {
@@ -1700,7 +1698,7 @@ button,
 }
 
 .social-list {
-  margin: 30px 0 0 10px;
+  margin: 32px 0 0 10px;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -1729,12 +1727,17 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 150px;
-  row-gap: 6px;
   -webkit-column-gap: 31px;
   -moz-column-gap: 31px;
   column-gap: 31px;
-  max-width: 470px;
+  width: 470px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav__list-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1742,8 +1745,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  row-gap: 6px;
 }
 
 .nav h3 {
@@ -1832,7 +1834,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  padding: 304px 50px 10px 24.75%;
+  padding: 304px 50px 123px 24.75%;
   z-index: 2;
 }
 
@@ -2395,8 +2397,8 @@ button,
     padding: 0 32px;
   }
 
-  .footer__container {
-    width: 90%;
+  .footer__nav-contacts-wrapper {
+    gap: 184px;
   }
 }
 
@@ -2478,7 +2480,7 @@ button,
   }
 
   .footer__nav-contacts-wrapper {
-    gap: 116px;
+    gap: 100px;
   }
 
   .social-list {
@@ -2502,6 +2504,10 @@ button,
 
   .nav__list-item p {
     line-height: 24px;
+  }
+
+  .nav__list-column {
+    display: block;
   }
 
   .nav__list-item {
@@ -2531,11 +2537,6 @@ button,
   .first-screen__button {
     margin-left: 45px;
     padding: 17px 27px;
-  }
-
-  .advantages__list {
-    -ms-grid-columns: 320px 320px;
-    grid-template-columns: 320px 320px;
   }
 
   .advantages__wrapper {
@@ -2646,6 +2647,11 @@ button,
     max-width: 670px;
   }
 
+  .form__wrapper-with-plane {
+    max-width: none;
+    padding: 0;
+  }
+
   .company {
     padding: 0 50px 80px 50px;
   }
@@ -2718,8 +2724,8 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-bottom: 14px;
-    margin-right: 15px;
+    padding-bottom: 0;
+    margin-right: 5px;
   }
 
   .footer__social-list {
@@ -2727,7 +2733,7 @@ button,
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 24px;
-    margin-top: 4px;
+    margin-top: 18px;
     margin-left: 6px;
   }
 

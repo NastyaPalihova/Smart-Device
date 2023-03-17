@@ -19,10 +19,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
-  @include vp-1023 {
-    grid-template-columns: 320px 320px;
-  }
-
   @include vp-767 {
     display: flex;
     flex-wrap: wrap;

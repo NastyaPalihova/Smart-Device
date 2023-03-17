@@ -256,6 +256,11 @@
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 50px;
+
+  @include vp-1023 {
+    max-width: none;
+    padding: 0;
+  }
 }
 
 .form__agree:focus-within {
