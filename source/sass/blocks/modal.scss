@@ -10,8 +10,7 @@
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-
-  background-color: rgba($color-default-black, 0.8);
+  background: rgba(3, 16, 27, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -204,6 +203,7 @@
 .modal__agree-checkbox-label:hover .modal__agree-mark,
 .modal__agree-checkbox-label span:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .modal__agree-checkbox-label:active .modal__agree-mark,

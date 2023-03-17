@@ -67,7 +67,6 @@
   list-style: none;
   display: flex;
   gap: 85px;
-  flex-wrap: wrap;
 
   @include vp-1023 {
     flex-direction: column;
@@ -81,6 +80,7 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    cursor: pointer;
   }
 
   &:active {
@@ -155,6 +155,8 @@
   bottom: 0;
   border-radius: 3px 0 0 0;
   z-index: 1;
+  outline: none;
+  border: none;
 
   &:hover,
   &:focus {

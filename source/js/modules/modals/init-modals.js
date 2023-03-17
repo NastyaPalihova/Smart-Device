@@ -34,6 +34,7 @@ const initModals = () => {
     }, 100);
   });
   modals = new Modals(settings);
+  document.getElementById('username-modal').focus();
   // Используйте в разработке экспортируемую переменную modals, window сделан для бэкэнда
   window.modals = modals;
 };

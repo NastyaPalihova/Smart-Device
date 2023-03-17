@@ -8,6 +8,7 @@
   @include vp-1023 {
     padding: 0 50px;
     min-height: 100px;
+    position: absolute;
   }
 
   @include vp-767 {
