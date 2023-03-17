@@ -2548,11 +2548,15 @@ button,
   }
 
   .catalog__item {
-    display: block;
+    min-width: 100%;
   }
 
   .catalog__item::before {
     background: rgba(4, 24, 39, 0.5);
+  }
+
+  .catalog__item-link {
+    min-width: 100%;
   }
 
   .catalog__item-link span {
