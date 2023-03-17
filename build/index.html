@@ -29,30 +29,36 @@
 
           <ul class="header__contacts-list">
             <li class="header__contacts-item">
-              <svg class="header__contacts-image" width="20" height="20" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#email"></use>
-              </svg>
-              <a class="header__contacts-text" href="mailto:info@sd.ru">info@sd.ru</a>
+              <a class="header__contacts-link" href="mailto:info@sd.ru">
+                <svg class="header__contacts-image" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#email"></use>
+                </svg>
+                <span>info@sd.ru</span></a>
             </li>
             <li class="header__contacts-item">
-              <svg class="header__contacts-image" width="20" height="20" aria-hidden="true" focusable="false">
-                <use href="./img/sprite.svg#phone-call"></use>
-              </svg>
-              <a class="header__contacts-text" href="tel:+74950005252">+7 (495) 000 52&nbsp;52</a>
+              <a class="header__contacts-link" href="tel:+74950005252">
+                <svg class="header__contacts-image" width="20" height="20" aria-hidden="true" focusable="false">
+                  <use href="./img/sprite.svg#phone-call"></use>
+                </svg>
+                <span>+7 (495) 000 52&nbsp;52</span></a>
             </li>
           </ul>
           <button class="header__button button" data-open-modal="feedback">Заказать звонок</button>
         </div>
       </div>
     </header>
+
     <main class="main-container">
+
       <section class="first-screen">
+        <div class="first-screen__container">
         <div class="first-screen__wrapper">
           <h1>Печатные платы</h1>
           <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
           <a class="first-screen__button button" href="#form"><span>Получить бесплатную консультацию</span></a>
         </div>
 
+        <div class="first-screen__image-wrapper">
         <picture>
           <source type="image/webp" media="(max-width: 767px)"
             srcset="./img/background-mobile.webp 1x, ./img/background-mobile@2x.webp 2x">
@@ -64,8 +70,11 @@
           <source media="(max-width: 1023px)" srcset="./img/background-tablet.jpg 1x, ./img/background-tablet@2x.jpg 2x"
             width="1396" height="640">
           <img class="first-screen__image" src="./img/background.jpg"
-            srcset="./img/background.jpg 1x, ./img/background@2x.jpg 2x" width="1920" height="800" alt="Изображение печатных плат.">
+            srcset="./img/background.jpg 1x, ./img/background@2x.jpg 2x" width="1920" height="800"
+            alt="Изображение печатных плат.">
         </picture>
+      </div>
+      </div>
       </section>
 
       <section class="advantages">
@@ -169,7 +178,8 @@
                     <source media="(max-width: 1023px)"
                       srcset="./img/promo-1-tablet.jpg 1x, ./img/promo-1-tablet@2x.jpg 2x" width="670" height="250">
                     <img class="catalog__item-image" src="./img/promo-1.jpg"
-                      srcset="./img/promo-1.jpg 1x, ./img/promo-1@2x.jpg 2x" width="350" height="650" alt="Фото производства печатных плат.">
+                      srcset="./img/promo-1.jpg 1x, ./img/promo-1@2x.jpg 2x" width="350" height="650"
+                      alt="Фото производства печатных плат.">
                   </picture>
                   <span>Производство печатных плат</span>
                 </a>
@@ -190,7 +200,8 @@
                     <source media="(max-width: 1023px)"
                       srcset="./img/promo-2-tablet.jpg 1x, ./img/promo-2-tablet@2x.jpg 2x" width="670" height="250">
                     <img class="catalog__item-image" src="./img/promo-2.jpg"
-                      srcset="./img/promo-2.jpg 1x, ./img/promo-2@2x.jpg 2x" width="350" height="650" alt="Фото монтажа печатных плат.">
+                      srcset="./img/promo-2.jpg 1x, ./img/promo-2@2x.jpg 2x" width="350" height="650"
+                      alt="Фото монтажа печатных плат.">
                   </picture>
                   <span>Монтаж печатных плат</span>
                 </a>
@@ -211,7 +222,8 @@
                     <source media="(max-width: 1023px)"
                       srcset="./img/promo-3-tablet.jpg 1x, ./img/promo-3-tablet@2x.jpg 2x" width="670" height="250">
                     <img class="catalog__item-image" src="./img/promo-3.jpg"
-                      srcset="./img/promo-3.jpg 1x, ./img/promo-3@2x.jpg 2x" width="350" height="650" alt="Фото комплектующих для светотехники.">
+                      srcset="./img/promo-3.jpg 1x, ./img/promo-3@2x.jpg 2x" width="350" height="650"
+                      alt="Фото комплектующих для светотехники.">
                   </picture>
                   <span>Комплектующие для светотехники</span>
                 </a>
@@ -408,27 +420,29 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get" data-form-validate>
           <div class="modal__form-wrapper">
             <label class="visually-hidden" for="username-modal">Имя</label>
-            <input placeholder="Имя" type="text" name="username-modal" id="username-modal" data-validate-type="text" data-focus data-required>
+            <input placeholder="Имя" type="text" name="username-modal" id="username-modal" data-validate-type="text"
+              data-focus data-required>
 
             <label class="visually-hidden" for="phone-modal">Телефон</label>
             <div class="phone-mask">
               <input placeholder="Телефон" type="tel" name="phone-modal" id="phone-modal" data-validate-type="phone"
-              data-required data-focus-visible-added>
+                data-required data-focus-visible-added>
             </div>
             <label class="visually-hidden" for="question-modal">Ваш вопрос</label>
             <textarea placeholder="Ваш вопрос" id="question-modal" name="question-modal" rows="4" cols="50"></textarea>
 
             <div class="modal__agree-section">
-            <div class="modal__agree-checkbox">
-              <label class="modal__agree-checkbox-label" for="agree-checkbox-modal">
-                <input class="visually-hidden focus-visible" type="checkbox" id="agree-checkbox-modal" name="agree" checked data-required>
-                <span class="modal__agree-mark"></span>
-                <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-              </label>
-            </div>
+              <div class="modal__agree-checkbox">
+                <label class="modal__agree-checkbox-label" for="agree-checkbox-modal">
+                  <input class="visually-hidden focus-visible" type="checkbox" id="agree-checkbox-modal" name="agree"
+                    checked data-required>
+                  <span class="modal__agree-mark"></span>
+                  <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                </label>
+              </div>
 
-            <button class="modal__button button" type="submit">Отправить</button>
-          </div>
+              <button class="modal__button button" type="submit">Отправить</button>
+            </div>
           </div>
         </form>
       </div>

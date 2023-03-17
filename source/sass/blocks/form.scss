@@ -1,7 +1,7 @@
 .form {
   width: 100%;
   position: relative;
-  padding: 170px 360px 248px 170px;
+  padding: 170px 0 248px 0;
   background: linear-gradient(139deg, $color-cerulean 0 33.7%, $color-deep-sky-blue 33.9% 100%);
 
   @include vp-1023 {
@@ -28,9 +28,8 @@
 }
 
 .form__paper-airplane-wrapper {
-  flex-shrink: 1;
-  padding-top: 78px;
-  padding-left: 179px;
+  padding-top: 77px;
+  margin-right: 120px;
 
   @include vp-1023 {
     display: none;
@@ -241,7 +240,6 @@
 .form__wrapper {
   margin-top: -4px;
   max-width: 580px;
-  margin-left: auto;
 
   @include vp-1023 {
     margin-left: 0;
@@ -255,7 +253,9 @@
 
 .form__wrapper-with-plane {
   display: flex;
-  gap: 30px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
 .form__agree:focus-within {
