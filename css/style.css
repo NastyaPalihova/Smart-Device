@@ -1977,8 +1977,8 @@ button,
   height: 100%;
   left: 0;
   top: 0;
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   z-index: 1;
 }
@@ -2545,6 +2545,10 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 30px;
+  }
+
+  .catalog__item {
+    display: block;
   }
 
   .catalog__item::before {
