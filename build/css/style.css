@@ -1694,27 +1694,9 @@ button,
   opacity: 0.3;
 }
 
-.logo__name-wrapper p:first-child {
-  font-weight: 700;
-  color: #f2f5f7;
-  margin: 0;
-  font-size: 25px;
-  padding-top: 10px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  white-space: nowrap;
-}
-
 .logo__image {
   padding-top: 3px;
   max-width: none;
-}
-
-.logo__name-wrapper p:not(:first-child) {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: "Roboto", "Arial", sans-serif;
-  margin: 0;
-  font-size: 12px;
-  font-weight: 500;
 }
 
 .social-list {
@@ -1975,6 +1957,7 @@ button,
 
 .catalog__item {
   position: relative;
+  display: -webkit-flex;
 }
 
 .catalog__item:hover,
@@ -2564,8 +2547,16 @@ button,
     gap: 30px;
   }
 
+  .catalog__item {
+    min-width: 100%;
+  }
+
   .catalog__item::before {
     background: rgba(4, 24, 39, 0.5);
+  }
+
+  .catalog__item-link {
+    min-width: 100%;
   }
 
   .catalog__item-link span {
@@ -2718,6 +2709,8 @@ button,
 
   .footer__wrapper {
     display: block;
+    margin-left: 70px;
+    margin-right: 70px;
   }
 
   .footer__contacts-list {
@@ -2770,8 +2763,8 @@ button,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-height: 100%;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .nav__list {

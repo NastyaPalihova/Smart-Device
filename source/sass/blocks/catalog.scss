@@ -76,6 +76,11 @@
 
 .catalog__item {
   position: relative;
+  display: -webkit-flex;
+
+  @include vp-1023 {
+    min-width: 100%;
+  }
 
   &:hover,
   &:focus {
@@ -109,6 +114,10 @@
   line-height: 30px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   position: relative;
+
+  @include vp-1023 {
+    min-width: 100%;
+  }
 
   @include vp-767 {
     font-size: 18px;
