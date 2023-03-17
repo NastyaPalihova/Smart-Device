@@ -1957,6 +1957,7 @@ button,
 
 .catalog__item {
   position: relative;
+  display: -webkit-flex;
 }
 
 .catalog__item:hover,
