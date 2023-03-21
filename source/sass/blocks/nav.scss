@@ -34,6 +34,11 @@
   flex-direction: column;
   row-gap: 6px;
 
+  @include vp-1439 {
+    max-width: 150px;
+    width: 400px;
+  }
+
   @include vp-1023 {
     display: block;
   }

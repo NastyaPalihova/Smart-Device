@@ -52,6 +52,10 @@
 .catalog__wrapper-content {
   margin: 0 40px;
 
+  @include vp-1353 {
+    margin: 0 50px;
+  }
+
   @include vp-1023 {
     margin: 0 50px;
   }
