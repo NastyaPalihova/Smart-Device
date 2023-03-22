@@ -8,27 +8,31 @@
   max-width: 100%;
   margin: 0 auto;
   display: grid;
+  min-height: 880px;
   grid-template-columns: auto 1fr auto;
+  position: relative;
+
+  @include vp-1023 {
+    min-height: 640px;
+  }
+
+  @include vp-767 {
+    min-height: 560px;
+  }
 }
 
 .first-screen__image-wrapper {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 
   img {
     object-fit: cover;
     object-position: 50% 100%;
     width: 100%;
-    height: 880px;
-
-    @include vp-1023 {
-      height: 640px;
-    }
-
-    @include vp-767 {
-      height: 560px;
-    }
+    height: 100%;
   }
 }
 
@@ -47,6 +51,7 @@
   position: relative;
   width: 100%;
   z-index: 0;
+  height: 100%;
 }
 
 .first-screen__wrapper {
@@ -66,8 +71,7 @@
   }
 
   @include vp-767 {
-    padding: 25px;
-    padding-top: 149px;
+    padding: 149px 25px 190px;
   }
 }
 
