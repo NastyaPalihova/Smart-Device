@@ -1613,6 +1613,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 90%;
 }
 
 .footer__wrapper {
@@ -1795,8 +1796,10 @@ button,
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
+  min-height: 880px;
   -ms-grid-columns: auto 1fr auto;
   grid-template-columns: auto 1fr auto;
+  position: relative;
 }
 
 .first-screen__image-wrapper {
@@ -1804,7 +1807,9 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .first-screen__image-wrapper img {
@@ -1813,7 +1818,7 @@ button,
   -o-object-position: 50% 100%;
   object-position: 50% 100%;
   width: 100%;
-  height: 880px;
+  height: 100%;
 }
 
 .first-screen__image-wrapper::before {
@@ -1833,6 +1838,7 @@ button,
   position: relative;
   width: 100%;
   z-index: 0;
+  height: 100%;
 }
 
 .first-screen__wrapper {
@@ -2409,8 +2415,23 @@ button,
     padding: 0 32px;
   }
 
+  .footer__contacts {
+    margin-left: 10px;
+  }
+
   .footer__nav-contacts-wrapper {
     gap: 184px;
+  }
+
+  .nav__list-column {
+    max-width: 150px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 1354px) {
+  .catalog__wrapper-content {
+    margin: 0 50px;
   }
 }
 
@@ -2536,8 +2557,8 @@ button,
     margin-bottom: 6px;
   }
 
-  .first-screen__image-wrapper img {
-    height: 640px;
+  .first-screen__container {
+    min-height: 640px;
   }
 
   .first-screen__wrapper {
@@ -2716,7 +2737,7 @@ button,
 
   .header {
     min-height: 70px;
-    padding: 0 25px;
+    padding: 0 40px 0 25px;
   }
 
   .header__logo {
@@ -2733,6 +2754,9 @@ button,
     padding-right: 0;
     margin-right: 6px;
     margin-top: 3px;
+    -webkit-column-gap: 39px;
+    -moz-column-gap: 39px;
+    column-gap: 39px;
   }
 
   .header__container {
@@ -2756,7 +2780,7 @@ button,
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 24px;
-    margin-top: 18px;
+    margin-top: 0;
     margin-left: 6px;
   }
 
@@ -2767,8 +2791,8 @@ button,
 
   .footer__wrapper {
     display: block;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 51px;
+    margin-right: 47px;
   }
 
   .footer__contacts-list {
@@ -2896,13 +2920,12 @@ button,
     display: none;
   }
 
-  .first-screen__image-wrapper img {
-    height: 560px;
+  .first-screen__container {
+    min-height: 560px;
   }
 
   .first-screen__wrapper {
-    padding: 25px;
-    padding-top: 149px;
+    padding: 149px 25px 190px;
   }
 
   .first-screen h1 {
